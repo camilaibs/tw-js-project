@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "A simple project with a single failing test",
   "scripts": {
-    "test": "mocha test/**/*spec.js"
+    "test": "jest",
+    "start": "babel-node src/index.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.1",
+    "jest": "^26.6.1"
   },
   "dependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "chalk": "^4.1.0"
   }
 }
